@@ -117,3 +117,13 @@ h1 {
 .label-score {
   margin-bottom: 2rem;
 }
+
+/* remove the scrollbar from input field */
+input[type="number"]::-webkit-outer-spin-button, 
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+}

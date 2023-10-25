@@ -28,7 +28,6 @@ document.querySelector('.check').addEventListener('click', function () {
     if (scoreValue > 1) {
       document.querySelector('.message').textContent = guessValue > secretValue ? '📈Too high📈' : '📉Too low📉';
       scoreValue--;
-      console.log(scoreValue);
       document.querySelector('.score').textContent = scoreValue;
     } else {
       document.querySelector('.message').textContent = '😔You lose the game😔';
@@ -36,7 +35,7 @@ document.querySelector('.check').addEventListener('click', function () {
   }
 });
 
-// Again Click on Check Button
+// Handle Click on Again Button
 document.querySelector('.again').addEventListener('click', function () {
   // Reset Game 
   scoreValue = 20;
